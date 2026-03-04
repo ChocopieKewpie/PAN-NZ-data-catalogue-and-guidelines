@@ -1,71 +1,46 @@
----
-layout: default
-title: Contributing
-permalink: /contributing/
----
-
-We welcome feedback and contributions to improve both the [guidelines]({{ site.baseurl }}/guidelines/index.html) and 
-the [data catalogues]({{ site.baseurl }}/data_catalogues/index.html). If you're a data custodian or anyone 
-with relevant insights, there are several ways to contribute.
-
-<br>
+## Local Development 
+This site is built with Jekyll and hosted on GitHub Pages.
 
 
+### Prerequisites
 
-## Via a GitHub Issue
----
-
-If you've identified an error, have a suggestion, or wish to discuss an
-improvement, please follow the below steps:
-
-1. Create a [GitHub account](https://github.com/) if you do not already have one
-2. Visit our GitHub repository: [manaakiwhenua/PAN-NZ-data-catalogue-and-guidelines](https://github.com/manaakiwhenua/PAN-NZ-data-catalogue-and-guidelines)
-3. Open a new [Issue](https://github.com/manaakiwhenua/PAN-NZ-data-catalogue-and-guidelines/issues) 
-4. You will be prompted to select an "issue template" - Please select either the Guidelines or Dataset template
-5. provide your feedback. 
-6. We will respond and track the discussion via the issue
+Before you can serve the site locally, make sure you have the following installed:
 
 
-<br>
+* Ruby (version 2.7 or higher)
+* Bundler (gem install bundler)
+* Jekyll (gem install jekyll)
 
 
+### Clone this repository 
+e.g. 
+`git clone git@github.com:manaakiwhenua/PAN-NZ-data-catalogue-and-guidelines.git`
+
+and then checkout a new branch if intending to make changes
+
+e.g. 
+`git checkout -b <BRANCH NAME>`
 
 
+### Install dependencies
+bundle install
 
-## Edit the Catalogue via Pull Request
----
+### Serve the site locally
+bundle exec jekyll serve
 
-If you are familiar with GitHub, please feel free to suggest changes directly 
-to the catalogue data (e.g., [/_data/regional_protected_areas.csv](https://github.com/manaakiwhenua/PAN-NZ-data-catalogue-and-guidelines/blob/main/_data/regional_protected_areas.csv))
-or guidelines via [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
-
-This can be done by:
-
-1. Clone the [repository](https://github.com/manaakiwhenua/PAN-NZ-data-catalogue-and-guidelines)
-2. Edit the relevant CSV file in `_data/` (These csv files are served to the data catalogues and 
-   thus all edits should be made here
-3. Submit a Pull Request with a summary of your changes
-
-We'll review and follow up with any clarifications before merging.
+This will serve the site at:
+`http://127.0.0.1:4000`
 
 
-<br>
+### Making Changes
+
+#### Data catalogues
+The data catalogues are found in [_data/](_data). This GitHub
+(web) page has been designed so that the underlying data is stored
+in the csv files and not the markdown. This avoids the difficulties
+of editing large markdown tables. Therefore to edit the table data, 
+edit the csv files and push the changes (via pull request) back
+the GitHub remote. 
 
 
 
-
-
-## Or Contact Us Via Email
----
-
-If you prefer, you can email:
-
-**pannz@landcareresearch.co.nz**
-
-Please include a clear reference to the guideline section or dataset record you are commenting on.
-
-
-<br>
-
-
-**Thank you for helping improve the Protected Areas Network of New Zealand.**
