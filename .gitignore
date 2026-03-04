@@ -12,3 +12,6 @@ _utils/logs
 _utils/downloads
 _utils/.env
 _utils/scripts/__pycache__
+
+secrets.py
+downloads/
